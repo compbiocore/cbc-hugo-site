@@ -10,6 +10,10 @@
         <div class="embed-img"><img src="images/dna.svg"></div>
         {{ end }}
         <div class="embed-body">
+          <div class="embed-site">
+            <img src="{{ .favicon.url }}" style="width: 20px;">
+            <span>{{ .site }}</span>
+          </div>
           <h5 class="embed-title">{{ .title }}</h5>
           <p class="embed-text">{{ truncate 300 .description }}</p>
           <a class="embed-external-link" href="{{ .url }}">
