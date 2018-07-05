@@ -29,7 +29,7 @@ gulp.task('watch', ['sass'], () => {
 
 // Start Hugo Server
 gulp.task('hugo-server', () => {
-  exec('hugo serve')
+  exec('hugo server -D')
 });
 
 // Set default task to `watch`
