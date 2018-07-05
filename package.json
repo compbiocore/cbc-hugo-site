@@ -1,0 +1,22 @@
+{
+  "name": "cbc-hugo-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "gulp-sass": "^4.0.1",
+    "js-yaml": "^3.12.0",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "getembeds": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fer@brown.edu",
+  "license": "MIT"
+}

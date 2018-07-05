@@ -1,0 +1,13 @@
+{{ range .Site.Data.embed }}
+<div class="embed">
+  {{ if .images }}
+  <div class="embed-img"><img src="{{ range first 1 .images }}{{ .url }}{{ end }}"></div>
+  {{ else }}
+  <div class="embed-img"><img src=".../100px180/?text=Image cap"></div>
+  {{ end }}
+  <div class="embed-body">
+    <h5 class="embed-title">{{ .title }}</h5>
+    <p class="embed-text">{{ truncate 250 .description }}</p>
+  </div>
+</div>
+{{ end }}
