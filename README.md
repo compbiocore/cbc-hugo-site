@@ -1,4 +1,4 @@
-# Brown Computational Biologt Core Hugo Site
+# Brown Computational Biology Core Hugo Site
 [![Build Status](https://travis-ci.org/compbiocore/cbc-hugo-site.svg?branch=master)](https://travis-ci.org/compbiocore/cbc-hugo-site)
 
 
@@ -20,7 +20,7 @@ npm install
 Sensitive environment variables are stored in the .env file. This file is included in .gitignore intentionally, so that it is never committed.
 - Create a `.env` file and copy into it the contents of `.env.template`
 - Create an account at [Embed.rocks](https://embed.rocks/)
-- Go to the dashboard and copy the key and add that to your `.env` file
+- Go to the dashboard, copy the key and add that to your `.env` file
 
 ## Local Development
 
