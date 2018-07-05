@@ -1,13 +1,35 @@
-{{ range .Site.Data.embed }}
-<div class="embed">
-  {{ if .images }}
-  <div class="embed-img"><img src="{{ range first 1 .images }}{{ .url }}{{ end }}"></div>
-  {{ else }}
-  <div class="embed-img"><img src=".../100px180/?text=Image cap"></div>
-  {{ end }}
-  <div class="embed-body">
-    <h5 class="embed-title">{{ .title }}</h5>
-    <p class="embed-text">{{ truncate 250 .description }}</p>
+<div id="carouselEmbed" class="carousel slide" data-ride="carousel">
+  <div class="embed-inner">
+
+    {{ range $index, $element := first 10 .Site.Data.embed }}
+    <div class="carousel-item{{ if eq $index 0 }} active{{  end }}">
+      <div class="embed" >
+        {{ if .images }}
+        <div class="embed-img" style="background-image: url({{ range first 1 .images }}{{ .url }}{{ end }})"></div>
+        {{ else }}
+        <div class="embed-img"><img src="images/dna.svg"></div>
+        {{ end }}
+        <div class="embed-body">
+          <h5 class="embed-title">{{ .title }}</h5>
+          <p class="embed-text">{{ truncate 300 .description }}</p>
+          <a class="embed-external-link" href="{{ .url }}">
+            <span class="text-muted">Read more</span>
+            <span class="fas fa-external-link-alt"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
   </div>
+
+  <a class="carousel-control-prev" href="#carouselEmbed" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselEmbed" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
 </div>
-{{ end }}

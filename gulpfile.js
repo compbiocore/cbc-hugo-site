@@ -9,8 +9,8 @@ gulp.task('embeds', () => {
 });
 
 //Watch embeds.js
-gulp.task('watch_embeds', ['embeds'], () => {
-  gulp.watch('index.js', ['embeds'])
+gulp.task('watch-embeds', ['embeds'], () => {
+  gulp.watch('config.yaml', ['embeds'])
 });
 
 // Compile `*.sass`
@@ -27,5 +27,10 @@ gulp.task('watch', ['sass'], () => {
   gulp.watch('src/styles/*', ['sass']);
 });
 
+// Start Hugo Server
+gulp.task('hugo-server', () => {
+  exec('hugo serve')
+});
+
 // Set default task to `watch`
-gulp.task('default', ['watch', 'watch_embeds']);
+gulp.task('default', ['watch', 'watch-embeds', 'hugo-server']);
