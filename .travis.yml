@@ -18,12 +18,10 @@ install:
   - npm install
 
 script:
-  - npm run getembeds
-  - gulp sass && hugo
+  - gulp sass embeds && hugo
 
 before_deploy:
-  - npm run getembeds
-  - gulp sass && hugo
+  - gulp sass embeds && hugo
 
 deploy:
   - provider: s3
