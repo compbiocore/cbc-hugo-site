@@ -7,7 +7,7 @@
         {{ if .images }}
         <div class="embed-img" style="background-image: url({{ range first 1 .images }}{{ .url }}{{ end }})"></div>
         {{ else }}
-        <div class="embed-img"><img src="images/dna.svg"></div>
+        <div class="embed-img"><img src="{{ "images/dna.svg" | absURL }}"></div>
         {{ end }}
         <div class="embed-body">
           <div class="embed-site">
