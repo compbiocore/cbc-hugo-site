@@ -1,6 +1,6 @@
 # Brown Computational Biology Core Hugo Site
 
-[![Travis](https://img.shields.io/travis/compbiocore/cbc-hugo-site.svg?branch=master&style=flat-square)](https://travis-ci.org/compbiocore/cbc-hugo-site)
+[![Travis](https://img.shields.io/travis/compbiocore/cbc-hugo-site.svg?style=flat-square)](https://travis-ci.org/compbiocore/cbc-hugo-site)
 
 
 ## Overview
