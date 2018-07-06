@@ -1,6 +1,9 @@
 # Brown Computational Biology Core Hugo Site
 [![Build Status](https://travis-ci.org/compbiocore/cbc-hugo-site.svg?branch=master)](https://travis-ci.org/compbiocore/cbc-hugo-site)
 
+## Overview
+
+This repository contains the Hugo project for Brown's Computational Biology Core website. It's set up as a node project in order to retrieve data for the **Genomics in the news** section using Embed.rocks.
 
 ## Requirements
 
