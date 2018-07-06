@@ -1,5 +1,7 @@
 # Brown Computational Biology Core Hugo Site
-[![Build Status](https://travis-ci.org/compbiocore/cbc-hugo-site.svg?branch=master)](https://travis-ci.org/compbiocore/cbc-hugo-site)
+
+[![Travis](https://img.shields.io/travis/compbiocore/cbc-hugo-site.svg?branch=master&style=flat-square)](https://travis-ci.org/compbiocore/cbc-hugo-site)
+
 
 ## Overview
 
@@ -34,3 +36,15 @@ npm start
 When you run `npm start`, a Gulp pipeline will start. That will collect the embeds based on the list of urls listed in
 `config.yaml` and dump the data into `data/embeds.json` so that can be used in Hugo templates. CSS will be compiled and a Hugo server will start.
 To see the site, navigate to `localhost:1313`.
+
+## Build
+
+Build site into `public/`:
+
+```bash
+gulp sass embeds && hugo
+```
+
+## Deployment
+
+A build will be triggered and deployed into a S3 bucket whenever changes are pushed to master **and** the Travis build passes.
