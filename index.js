@@ -6,7 +6,7 @@ const request = require('request');
 
 const apiKey = process.env.EMBED_ROCKS_API_KEY;
 
-const doc = yaml.safeLoad(fs.readFileSync('config.yaml', 'utf8'));
+const doc = yaml.safeLoad(fs.readFileSync('config.yml', 'utf8'));
 
 const getEmbed = (url) => {
   return new Promise((resolve, reject) => {
