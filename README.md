@@ -33,8 +33,8 @@ Sensitive environment variables are stored in the .env file. This file is includ
 npm start
 ```
 
-When you run `npm start`, a Gulp pipeline will start. That will collect the embeds based on the list of urls listed in
-`config.yaml` and dump the data into `data/embeds.json` so that can be used in Hugo templates. CSS will be compiled and a Hugo server will start.
+When you run `npm start`, a Gulp pipeline will start. That will collect the embeds based on the list of urls listed in Hugo's
+`config.yml` and dump the data into `data/embeds.json` so it can be used in Hugo templates. CSS will be compiled and a Hugo server will start.
 To see the site, navigate to `localhost:1313`.
 
 ## Build
@@ -47,4 +47,4 @@ gulp sass embeds && hugo
 
 ## Deployment
 
-A build will be triggered and deployed into a S3 bucket whenever changes are pushed to master **and** the Travis build passes.
+A build will be triggered and deployed into a S3 bucket whenever changes are pushed to master **and** the Travis build passes. Currently, the website can be accessed at [http://cbc-website-dev.s3-website-us-east-1.amazonaws.com](http://cbc-website-dev.s3-website-us-east-1.amazonaws.com).
