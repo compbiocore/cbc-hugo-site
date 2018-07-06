@@ -20,7 +20,7 @@ install:
 script:
   - npm getembeds
   - gulp sass
-  - hugo server
+  - hugo
 
 #before_deploy:
 #  - gulp sass && hugo
