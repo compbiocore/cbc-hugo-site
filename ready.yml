@@ -4,3 +4,4 @@ site_author:      Fernando Gelin
 repo_url:         https://github.com/compbiocore/cbc-hugo-site
 site_description: Computational Biology Core Website
 site_url: https://datascie.brown.edu/compbiocore
+type: software
