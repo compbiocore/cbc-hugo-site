@@ -1,4 +1,8 @@
+<div class="embed-heading">
+<h2 class="section-title">{{ .Site.Params.slider.title }}</h2>
+</div>
 <div id="carouselEmbed" class="carousel slide" data-ride="carousel">
+
   <div class="embed-inner">
 
     {{ range $index, $element := first 10 .Site.Data.embed }}

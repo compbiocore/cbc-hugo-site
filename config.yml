@@ -1,16 +1,60 @@
 baseURL: "http://cbc-website-dev.s3-website-us-east-1.amazonaws.com/"
 languageCode: "en-us"
-title: "CBC Hugo Site"
+title: "Computational Biology Core"
+theme: evie
 
+menu:
+  main:
+    - name: About
+    - name: Resources
 
 params:
   embed:
     - url: "http://www.pnas.org/content/107/16/7503.long"
-
     - url: "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1319-7"
-
     - url: "https://almob.biomedcentral.com/articles/10.1186/s13015-017-0116-x"
-
     - url: "https://www.biorxiv.org/content/early/2017/10/04/173203"
-
     - url: "https://www.nature.com/articles/s41586-018-0279-8"
+
+  hero:
+    title: Computational Biology Core
+    text: The COBRE-CBHD Computational Biology Core (CBC) integrates across multiple research focused Centers supporting data-intensive research using high-throughput DNA/RNA sequencing datasets. The CBC is a service focused Core Facility.
+    button:
+      - title: Overview
+        accent: true
+      - title: Services
+        accent: true
+      - title: Resources
+        accent: true
+      - title: Education
+        accent: true
+      - title: People
+        accent: true
+      - title: Support
+        accent: true
+
+  triple:
+    title: Featured News and Events
+    text: News and events by the Computational Biology Core
+    box:
+      - title: IPA is now available
+        text: The CBC has subscribed to a site-wide license to the Ingenuity Pathway Analysis Software tool, accessible to all researchers with a Brown affiliation.
+        src: images/ipa.jpg
+      - title: CBC Projects
+        text: CBC launches new site with open source software, workshops, tutorials, and documentation.
+        src: images/cbc.svg
+      - title: CBC Projects
+        text: CBC launches new site with open source software, workshops, tutorials, and documentation.
+        src: images/cbc.svg
+  slider:
+    title: Genomics in the News
+
+  footer:
+    firstcolumn:
+      - Computational Biology Core
+      - 3 Davol Sq., Providence RI 02903
+      - "[cbc-help@brown.edu](mailto:cbc-help@brown.edu)"
+
+    secondcolumn:
+      - "**Acknowledgements**"
+      - Research reported on this website is supported by an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health under grant number P20GM109035.
