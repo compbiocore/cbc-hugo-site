@@ -9,13 +9,8 @@ menu:
     - name: Resources
 
 params:
-  embed:
-    - url: "http://www.pnas.org/content/107/16/7503.long"
-    - url: "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1319-7"
-    - url: "https://almob.biomedcentral.com/articles/10.1186/s13015-017-0116-x"
-    - url: "https://www.biorxiv.org/content/early/2017/10/04/173203"
-    - url: "https://www.nature.com/articles/s41586-018-0279-8"
-
+  # Landing page content
+  ## first section (main)
   hero:
     title: Computational Biology Core
     text: The COBRE-CBHD Computational Biology Core (CBC) integrates across multiple research focused Centers supporting data-intensive research using high-throughput DNA/RNA sequencing datasets. The CBC is a service focused Core Facility.
@@ -33,9 +28,10 @@ params:
       - title: Support
         accent: true
 
+  # second section: News and Events
   triple:
     title: Featured News and Events
-    text: News and events by the Computational Biology Core
+    text: News and events from the Computational Biology Core
     box:
       - title: IPA is now available
         text: The CBC has subscribed to a site-wide license to the Ingenuity Pathway Analysis Software tool, accessible to all researchers with a Brown affiliation.
@@ -43,12 +39,22 @@ params:
       - title: CBC Projects
         text: CBC launches new site with open source software, workshops, tutorials, and documentation.
         src: images/cbc.svg
-      - title: CBC Projects
-        text: CBC launches new site with open source software, workshops, tutorials, and documentation.
-        src: images/cbc.svg
+      - title: RNA-seq QC Workshop
+        text: The Computational Biology Core is presenting a workshop on RNA-seq QC and Exploratory Analysis using Bioconductor on Friday, November 30, 2018, 9 a.m. to noon in the CIT SWIG Boardroom. For more details and to register please click the title of this slide.
+        src: images/undraw_design.svg
+
+  # Third section: Genomics in the News
+  embed: # items that will show up on the slider in the section Genomics in the News.
+         # Used by node.js script to populate data folder.
+    - url: "http://www.pnas.org/content/107/16/7503.long"
+    - url: "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1319-7"
+    - url: "https://almob.biomedcentral.com/articles/10.1186/s13015-017-0116-x"
+    - url: "https://www.biorxiv.org/content/early/2017/10/04/173203"
+    - url: "https://www.nature.com/articles/s41586-018-0279-8"
   slider:
     title: Genomics in the News
 
+  # Footer
   footer:
     firstcolumn:
       - Computational Biology Core

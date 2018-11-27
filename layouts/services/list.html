@@ -1,0 +1,113 @@
+{{ define "main" }}
+<!-- Hero unit -->
+<div class="hero__services">
+	<div class="hero__services__overlay hero__services__overlay--gradient"></div>
+	<div class="hero__mask"></div>
+	<div class="hero__inner">
+		<div class="container">
+			<div class="hero__content">
+				<div class="hero__content__inner" id="navConverter">
+					<h1 class="hero__title">{{ .Params.front.title | markdownify}}</h1>
+					<p class="hero__text">{{ .Params.front.description | markdownify }}</p>
+					{{ range .Params.front.button }}
+
+					{{if .accent}}
+
+					<a href="{{ lower .title| safeURL }}" class="button button__accent">{{ .title | markdownify}}</a>
+
+					{{else}}
+
+					<a href="{{ lower .title| safeURL }}" class="button hero__button">{{ .title | markdownify}}</a>
+
+					{{ end }}
+
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hero__sub">
+	<span id="scrollToNext" class="scroll">
+		<!-- prettier-ignore -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+	</span>
+</div>
+
+<!-- Data Analysis -->
+<div class="steps landing__section">
+	<div class="container">
+		<h2>{{ .Params.data.title | markdownify }}</h2>
+		<p>{{ .Params.data.description | markdownify }}</p>
+	</div>
+	<div class="container">
+		<div class="steps__inner">
+			{{ range $i, $box :=  .Params.data.box }}
+
+			{{if eq (mod $i 3) 0}}
+		</div>
+		<div class="steps__inner">
+			{{ end }}
+			<div class="step">
+				<div class="steps__inner">
+					<div class="step">
+						<div class="step__media"><img src="{{$box.src}}" alt="{{$box.alt}}" class="step__image" /></div>
+						<h4>{{ $box.title | markdownify }}</h4>
+						<p class="step__text">{{ $box.text | markdownify }}</p>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+		<div class="container">
+			<a href="{{ .Params.data.button.href }}" class="button button__accent">{{ .Params.data.button.text | markdownify}}</a>
+		</div>
+	</div>
+</div>
+
+<!-- Consulting -->
+
+<!-- Expanded sections -->
+{{ range .Params.consulting.section }}
+<div class="expanded landing__section">
+	<div class="container">
+		<div class="expanded__inner">
+			<div class="expanded__media">
+				<iframe class="iframe-calendar" src="https://calendar.google.com/calendar/embed?src=brown.edu_oe4t4gp3e9vvu8crij3d6pblq4%40group.calendar.google.com&amp;ctz=America/New_York" style="border: 0" frameborder="0" scrolling="no"></iframe>
+				<!-- <img src="{{.src}}" alt="{{.alt}}" class="expanded__image" /> -->
+			</div>
+			<div class="expanded__content">
+				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
+				<p class="expanded__text">{{ .text | markdownify }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<p class="services-text2">{{ .text2 | markdownify}}</p>
+	</div>
+
+	<div class="container-services">
+		{{ range .button }}
+
+		<a href="{{ .href }}" class="button button__accent">{{ .title | markdownify}}</a>
+
+		{{ end }}
+	</div>
+
+</div>
+{{ end }}
+
+<!-- DevOps -->
+<div class="expanded landing__section">
+	<div class="container">
+		<div class="expanded__inner">
+			<div class="expanded__media"><img src="{{ .Params.devops.src}}" alt="{{ .Params.devops.alt}}" class="expanded__image" /></div>
+			<div class="expanded__content">
+				<h2 class="expanded__title">{{ .Params.devops.title | markdownify }}</h2>
+				<p class="expanded__text">{{ .Params.devops.text | markdownify }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}
