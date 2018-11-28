@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ partial "front" .}}
+<!-- Resources -->
+<!-- Expanded sections -->
+{{ range .Params.section }}
+<div class="expanded landing__section">
+	<div class="container">
+		<div class="expanded__inner">
+			<div class="expanded__media">
+				{{ if .calendar }}
+				<iframe class="iframe-calendar" src="https://calendar.google.com/calendar/embed?src=brown.edu_e9ihnmpmjbldkcpvmralir6578%40group.calendar.google.com&amp;ctz=America/New_York" style="border: 20" frameborder="0" scrolling="no"></iframe>
+				{{ else }}
+				<img src="{{ .src }}" class="expanded__image" />
+				{{ end }}
+			</div>
+			<div class="expanded__content">
+				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
+				<p class="expanded__text">{{ .text | markdownify }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<p class="services-text2">{{ .text2 | markdownify}}</p>
+	</div>
+
+	<div class="container-services">
+		{{ range .button }}
+
+		<a href="{{ .href }}" class="button button__accent">{{ .title | markdownify}}</a>
+
+		{{ end }}
+	</div>
+
+</div>
+{{ end }}
+
+{{ end }}

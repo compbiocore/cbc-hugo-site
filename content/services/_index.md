@@ -7,17 +7,15 @@ draft: false
 front:
   title: Core Services
   description: The Computational Biology Core provides help for experimental design and data processing pipelines for high-throughput datasets generated in individual projects, particularly for DNA/RNA sequencing data. Our services are broadly categorized below and click on the link for further details on any specific category.
-  image: images/code.png
+  src: ../images/code.png
   button:
     - title: Data Analysis
-      accent: true
       href: true
     - title: Consulting
-      accent: true
       href: true
     - title: DevOps
-      accent: true
       href: true
+
 data:
   title: "# Data Analysis"
   description: The core provides assistance in experimental design and data processing pipelines for high-throughput datasets generated in individual projects, particularly for DNA/RNA sequencing data. Our assistance falls broadly into the categories outlined below.
@@ -57,5 +55,6 @@ devops:
   "
   src:
   alt:
+
 
 ---

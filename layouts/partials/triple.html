@@ -1,0 +1,27 @@
+<div class="steps landing__section">
+	<div class="container">
+		<h2>{{ .Params.triple.title | markdownify }}</h2>
+		<p>{{ .Params.triple.text| markdownify }}</p>
+	</div>
+	<div class="container">
+		<div class="steps__inner">
+			{{ range $i, $box :=  .Params.triple.people }}
+
+			{{if eq (mod $i 3) 0}}
+		</div>
+		<div class="steps__inner">
+			{{ end }}
+			<div class="step">
+				<div class="steps__inner">
+					<div class="step step__triple">
+						<div class="step__media"><img src="{{$box.src}}" class="step__image__triple" /></div>
+						<h3>{{ $box.name | markdownify }}</h3>
+						<h4>{{ $box.title | markdownify }}</h4>
+						<p class="step__text__triple">{{ $box.affiliation | markdownify }}</p>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</div>

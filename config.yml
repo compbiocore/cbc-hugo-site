@@ -7,26 +7,25 @@ menu:
   main:
     - name: About
     - name: Resources
+    - name: Services
+    - name: Support
 
 params:
+  top: Center for Computational Biology of Human Disease
   # Landing page content
   ## first section (main)
   hero:
     title: Computational Biology Core
     text: The COBRE-CBHD Computational Biology Core (CBC) integrates across multiple research focused Centers supporting data-intensive research using high-throughput DNA/RNA sequencing datasets. The CBC is a service focused Core Facility.
-    button:
-      - title: Overview
-        accent: true
-      - title: Services
-        accent: true
-      - title: Resources
-        accent: true
-      - title: Education
-        accent: true
-      - title: People
-        accent: true
-      - title: Support
-        accent: true
+    # button:
+    #   - title: Services
+    #     accent: true
+    #   - title: Resources
+    #     accent: true
+    #   - title: People
+    #     accent: true
+    #   - title: Support
+    #     accent: true
 
   # second section: News and Events
   triple:
@@ -52,7 +51,7 @@ params:
     - url: "https://www.biorxiv.org/content/early/2017/10/04/173203"
     - url: "https://www.nature.com/articles/s41586-018-0279-8"
   slider:
-    title: Genomics in the News
+    title: "# Genomics in the News"
 
   # Footer
   footer:
