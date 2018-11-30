@@ -10,14 +10,15 @@ front:
   src: ../images/code.png
   button:
     - title: Data Analysis
-      href: true
+      href: "#data-analysis"
     - title: Consulting
-      href: true
+      href: "#consulting"
     - title: DevOps
-      href: true
+      href: "#devops"
 
 data:
   title: "# Data Analysis"
+  id: data-analysis
   description: The core provides assistance in experimental design and data processing pipelines for high-throughput datasets generated in individual projects, particularly for DNA/RNA sequencing data. Our assistance falls broadly into the categories outlined below.
   button:
     text: Contact us to request assistance or learn more
@@ -36,12 +37,13 @@ data:
 consulting:
   section:
     - title: "# Consulting Services"
+      id: consulting
       text: "<p>The Core provides two distinct complimentary services  to all researchers at Brown.</p>
-             <p><strong>Appointment Based</strong>&nbsp;&ndash;&nbsp;A team of experienced computational biologists and biostatisticians are on-hand to help investigators design experiments.</p>
-             <p><strong>Weekly Consulting Sessions</strong>&nbsp;&ndash;&nbsp;The Core offers two weekly Consulting sessions for all researchers to discuss any immediate issues  in data anlysis including trouble-shooting code, help with stiatistical analysis and discussion of options for bioinformatic analysis.</p>"
+     <p><strong>Appointment Based</strong>&nbsp;&ndash;&nbsp;A team of experienced computational biologists and biostatisticians are on-hand to help investigators design experiments.</p>
+     <p><strong>Weekly Consulting Sessions</strong>&nbsp;&ndash;&nbsp;The Core offers two weekly Consulting sessions for all researchers to discuss any immediate issues  in data analysis including trouble-shooting code, help with statistical analysis and discussion of options for bioinformatic analysis.</p>"
       text2: "To avail of the consulting services please sign up below if you have not used the CBC services before. Use the scheduler below to reserve a slot for the weekly  consulting sessions and in the event that all slots are filled and you need an appointment sooner contact our **[helpdesk](mailto:cbc-help.brown.edu)**."
       button:
-        - title: "Sing-up"
+        - title: "Sign-up"
           href: "https://docs.google.com/forms/d/e/1FAIpQLSeEYb83-J6tuevzmNPxMFW6Jy_p3fn4PLigEzBIGRTbRUH-pw/viewform"
         - title: Schedule a session
           href: "https://calendar.google.com/calendar/selfsched?sstoken=UUlMRmZqUzlHR0pjfGRlZmF1bHR8NWVlZjkzMmUwNjdlNmE4ZDIwMGU2NzI0YzY3YWVlOTQ"
@@ -49,9 +51,10 @@ consulting:
 
 devops:
   title: "# DevOps"
+  id: devops
   text: "
-  <p><strong>R/Python Packages</strong>&nbsp;&ndash;&nbsp;The core will provide help with packaging R and Python code and work with computational biogists to convert their code to make it easily shareable.</p>
-  <p><strong>Web apps</strong>&nbsp;&ndash;&nbsp;The Core will help with the implementation and maintenace of  web apps using the latest technologies for projects requiring web enabled interfaces.</p>
+  <p><strong>R/Python Packages</strong>&nbsp;&ndash;&nbsp;The core will provide help with packaging R, Python and Julia code and work with computational biologists to convert their code to make it easily shareable.</p>
+  <p><strong>Web apps</strong>&nbsp;&ndash;&nbsp;The Core will help with the implementation and maintenance of web apps using the latest technologies for projects requiring web enabled interfaces.</p>
   "
   src:
   alt:

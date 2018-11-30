@@ -1,28 +1,47 @@
 ---
 title: "Resources"
 date: 2018-11-27T14:53:38-05:00
-draft: true
+draft: false
 
 front:
   title: Resources
   description: Resources provided by the Computational Biology Core. Includes database subscriptions and licenses. Additionally, we provide various open source software, workshops, and tutorials in Bioinformatics and Data Science.
   src: ../images/sohiini-map.jpg
   button:
-    - title: CBC Projects
-      href: true
-    - title: IPA
-      href: true
+    - title: CBC Tools
+      href: "#cbc-projects"
+    - title: Ingenuity Pathway Analysis
+      href: "#ipa"
+    - title: Outreach
+      href: "#outreach"
+
+triple:
+  title: "# Outreach"
+  text: CBC hosts workshops, publishes tutorials on computing tools used by bioinformaticians, and provides analysis support to the Brown community. To learn more about what we offer, click on the links below or contact us at cbc-help@brown.edu.
+  id: outreach
+  box:
+    - title: Workshops
+      text:
+      src: ../images/undraw_designer.svg
+    - title: Tutorials
+      text:
+      src: ../images/undraw_elements.svg
+    - title: Analysis Support
+      text:
+      src: ../images/undraw_hello_aeia.svg
 
 section:
-  - title: "# Computational Biology Core Projects"
+  - title: "# Computational Biology Core Tools"
+    id: cbc-projects
     text: "CBC provides various open source software, workshops, and tutorials. Complete projects can be found on the [Projects Index Site](https://compbiocore.github.io). Projects in development can be found on our [GitHub account](https://www.github.com/compbiocore)."
     src: ../images/undraw_browser.svg
     button:
-      - title: Projects Index Site
+      - title: Tools Index
         href: https://compbiocore.github.io
       - title: GitHub
         href: https://www.github.com/compbiocore
   - title: "# Ingenuity Pathway Analysis"
+    id: ipa
     text: "<p>IPA is a software application that enables biologists and bioinformaticians to identify the biological mechanisms, pathways, and functions most relevant to their experimental datasets or genes of interest. It allows researchers to graphically view, analyze, and query data in a comprehensive and seamless manner to understand molecular interactions, biological functions and disease on multiple levels. For more details go to qiagen IPA website and also access their webinars. Access to IPA free for the entire Brown community through September 2019.</p>
     <p><strong>Only one concurrent users will be allowed at a time, so use the scheduler below to reserve analysis time.</strong></p>
     <p>To request access to IPA please use the request button below. After registration, Ingenuity Systems will send each registrant, via e-mail, their individual password and login instructions. Please note, the first time you login to your IPA account, it may take a few minutes to load the application. Additionally, please disable all pop-up blockers prior to signing in as they may prevent the application from loading.</p>"

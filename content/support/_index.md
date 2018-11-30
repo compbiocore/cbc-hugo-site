@@ -1,7 +1,7 @@
 ---
 title: "Support"
 date: 2018-11-28T11:34:59-05:00
-draft: true
+draft: false
 
 
 front:
@@ -12,11 +12,12 @@ front:
     - title: Discussion Forum
       href: https://groups.google.com/a/brown.edu/forum/#!forum/brown-compbiocore-discuss
     - title: FAQs
-      href: true
+      href: "#faq"
     - title: Helpdesk
       href: mailto:cbc-help@brown.edu
 faq:
   title: Frequently Asked Questions
+  id: faq
   text:
     - q: How can I get CCV support?
       a: Contact support@ccv.brown.edu

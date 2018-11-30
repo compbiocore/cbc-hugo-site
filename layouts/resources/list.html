@@ -1,9 +1,11 @@
 {{ define "main" }}
 {{ partial "front" .}}
 <!-- Resources -->
+{{ partial "triple" . }}
+
 <!-- Expanded sections -->
 {{ range .Params.section }}
-<div class="expanded landing__section">
+<div id="{{ .id }}" class="expanded landing__section">
 	<div class="container">
 		<div class="expanded__inner">
 			<div class="expanded__media">
@@ -33,5 +35,4 @@
 
 </div>
 {{ end }}
-
 {{ end }}

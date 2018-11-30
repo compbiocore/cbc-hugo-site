@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2018-11-28T09:47:32-05:00
-draft: true
+draft: false
 
 front:
   title: Global Vision

@@ -11,6 +11,7 @@ menu:
     - name: Support
 
 params:
+  brown_url: https://www.brown.edu
   top: Center for Computational Biology of Human Disease
   # Landing page content
   ## first section (main)
@@ -29,7 +30,7 @@ params:
 
   # second section: News and Events
   triple:
-    title: Featured News and Events
+    title: "# Featured News and Events"
     text: News and events from the Computational Biology Core
     box:
       - title: IPA is now available

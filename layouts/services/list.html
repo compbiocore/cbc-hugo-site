@@ -2,7 +2,7 @@
 <!-- Hero unit -->
 {{ partial "front" .}}
 <!-- Data Analysis -->
-<div class="steps landing__section">
+<div id="{{ .Params.data.id }}" class="steps landing__section">
 	<div class="container">
 		<h2>{{ .Params.data.title | markdownify }}</h2>
 		<p>{{ .Params.data.description | markdownify }}</p>
@@ -36,7 +36,7 @@
 
 <!-- Expanded sections -->
 {{ range .Params.consulting.section }}
-<div class="expanded landing__section">
+<div id="{{ .id }}"class="expanded landing__section">
 	<div class="container">
 		<div class="expanded__inner">
 			<div class="expanded__media">
@@ -65,7 +65,7 @@
 {{ end }}
 
 <!-- DevOps -->
-<div class="expanded landing__section">
+<div id="{{ .Params.devops.id }}" class="expanded landing__section">
 	<div class="container">
 		<div class="expanded__inner">
 			<div class="expanded__media"><img src="{{ .Params.devops.src}}" alt="{{ .Params.devops.alt}}" class="expanded__image" /></div>
