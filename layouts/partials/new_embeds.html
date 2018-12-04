@@ -1,9 +1,12 @@
+<div class="embeds__heading">
+<h1 >{{ .Site.Params.slider.title | markdownify }}</h1>
+</div>
 <div class="embeds__outer">
-  <h1>{{ .Site.Params.slider.title | markdownify }}</h1>
 
   <div class="embeds__container">
-    {{ range $index, $element := first 10 .Site.Data.embed }}
-    <div class="embeds__card" >
+    {{ range $index, $element := first 12 .Site.Data.embed }}
+
+    <div class="embeds__card {{if eq (mod $index 2) 0}}change__satus__a{{ else }}change__status_b{{ end }}" >
       {{ if .images }}
       <div class="embed__img" style="background-image: url({{ range first 1 .images }}{{ .url }}{{ end }})"></div>
       {{ else }}
@@ -13,7 +16,7 @@
         <div class="embed__site">
           <span>{{ .site }}</span>
         </div>
-        <h5 class="embed__title">{{ .title }}</h5>
+        <h5 class="embed__title">{{ truncate 100 .title }}</h5>
         <p class="embed__text">{{ truncate 100 .description }}</p>
         <a class="embed__external__link" href="{{ .url }}">
           <span class="text-muted">Read more</span>
@@ -21,6 +24,7 @@
         </a>
       </div>
     </div>
+
     {{ end }}
   </div>
 </div>
