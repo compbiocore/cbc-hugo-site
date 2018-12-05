@@ -1,0 +1,15 @@
+{{ if .Params.faq }}
+<div id="{{ .Params.faq.id }}" class="cta cta--reverse">
+	<div class="container">
+		<div class="cta__inner">
+			<h1 class="cta__title">{{ .Params.faq.title  }}</h1>
+			<div class="cta__text__container">
+			{{ range .Params.faq.text }}
+			<p class="cta__text_q">{{ .q | markdownify }}</p>
+			<p class="cta__text_a">{{ .a | markdownify }}</p>
+			{{ end }}
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}
