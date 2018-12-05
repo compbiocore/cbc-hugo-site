@@ -16,8 +16,8 @@
 			<nav class="navbar__menu">
 				<!-- prettier-ignore -->
 				<ul>
-					{{range.Site.Menus.main}}
-					<li><a href="{{ lower .Name | relURL }}">{{ .Name }}</a></li>
+					{{range .Site.Menus.main}}
+					<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 					{{ end }}
 				</ul>
 			</nav>
