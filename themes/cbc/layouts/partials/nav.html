@@ -17,7 +17,7 @@
 				<!-- prettier-ignore -->
 				<ul>
 					{{range.Site.Menus.main}}
-					<li><a href="{{ lower .Name | absURL }}">{{ .Name }}</a></li>
+					<li><a href="{{ lower .Name | relURL }}">{{ .Name }}</a></li>
 					{{ end }}
 				</ul>
 			</nav>
