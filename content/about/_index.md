@@ -31,7 +31,7 @@ triple:
     affiliation: Data Science Practice, CIS
     src: "../images/paul.jpg"
   - name: Ashok Ragavendran, PhD
-    title: Computational Biologist, CBC Manager
+    title: Lead Data Scientist, CBC Manager
     affiliation: Data Science Practice, CIS
     src: "../images/ashok.jpg"
   - name: August Guang, PhD
