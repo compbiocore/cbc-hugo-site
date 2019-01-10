@@ -50,8 +50,5 @@ triple:
     title: Genomics Data Scientist
     affiliation: Data Science Practice, CIS
     src: "../images/joselynn.jpg"
-  - name: No open positions at the moment
-    title: Check back soon!
-    affiliation: 
 
 ---
