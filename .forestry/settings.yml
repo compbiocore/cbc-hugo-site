@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+- type: document
+  path: config.yml
+  label: General
+  match: "**/*"
+  read_only: false
 - type: directory
   path: content/about
   label: About
