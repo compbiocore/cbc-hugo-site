@@ -27,7 +27,7 @@ triple:
     affiliation: Department of Biostatistics
     src: "../images/wu.jpg"
   - name: Paul Stey, PhD
-    title: Advisor, Interim Director of Data Science
+    title: Advisor, Director of Data Science
     affiliation: Data Science Practice, CIS
     src: "../images/paul.jpg"
   - name: Ashok Ragavendran, PhD
