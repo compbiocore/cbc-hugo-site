@@ -39,7 +39,7 @@ params:
     - title: CBC Tools
       text: CBC launches new site with open source software, workshops, tutorials,
         and documentation. You can visit the new site [here][https://compbiocore.github.io].
-      src: static/images/cbc-tools-site.png
+      src: images/cbc-tools-site.png
     - title: RNA-seq QC Workshop
       text: The Computational Biology Core is presenting a workshop on RNA-seq QC
         and Exploratory Analysis using Bioconductor on Friday, November 30, 2018,
