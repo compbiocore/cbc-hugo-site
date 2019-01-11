@@ -1,5 +1,5 @@
 ---
-baseURL: http://cbc-website-dev.s3-website-us-east-1.amazonaws.com/
+baseURL: http://cbc-website-prod.s3-website-us-east-1.amazonaws.com/
 languageCode: en-us
 title: Computational Biology Core
 theme: cbc
