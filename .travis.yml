@@ -32,7 +32,7 @@ deploy:
     local-dir: public
     acl: public_read
     on:
-      branch: master
+      branch: staging
 
-#after_deploy:
-#  - if [[ $TRAVIS_BRANCH = "master" ]]; then travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY_ID -s $AWS_SECRET_ACCESS_KEY -c $AWS_CLOUDFRONT_ID_PROD -i '/*' -b 'master' -p $TRAVIS_PULL_REQUEST; fi
+# after_deploy:
+#   - if [[ $TRAVIS_BRANCH = "master" ]]; then travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY_ID -s $AWS_SECRET_ACCESS_KEY -c $AWS_CLOUDFRONT_ID_PROD -i '/*' -b 'master' -p $TRAVIS_PULL_REQUEST; fi
