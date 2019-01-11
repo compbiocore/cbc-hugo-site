@@ -29,13 +29,17 @@
 }
 
 .step__media {
-	height: 260px;
-	background-position-x: center;
-	background-position-y: 10%; 
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 170px;
 
+	&__people {
+		height: 230px;
+		background-position-x: center;
+		background-position-y: 10%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
+
 
 .step__image {
 	max-height: 100px;
