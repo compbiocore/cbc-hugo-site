@@ -28,6 +28,16 @@ params:
     text: The COBRE-CBHD Computational Biology Core (CBC) integrates across multiple
       research focused Centers supporting data-intensive research using high-throughput
       DNA/RNA sequencing datasets. The CBC is a service focused Core Facility.
+    button:
+      - title: support
+        accent: true
+      - title: services
+        accent: true
+      - title: resources
+        accent: true
+      - title: about
+        accent: true
+
   triple:
     title: "# Featured News and Events"
     text: News and events from the Computational Biology Core

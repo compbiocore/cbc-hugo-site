@@ -8,21 +8,24 @@
 				<div class="hero__content__inner" id="navConverter">
 					<h1 class="hero__title">{{ .Site.Params.hero.title | markdownify}}</h1>
 					<p class="hero__text">{{ .Site.Params.hero.text | markdownify }}</p>
-					<a href="{{ .Site.Params.brown_url }}">{{ readFile "static/images/brown-h.svg" | safeHTML }}</a>
+					<div class="d-flex flex-column" style="margin-top:5rem;">
+					<!-- <a href="{{ .Site.Params.brown_url }}">{{ readFile "static/images/brown-h.svg" | safeHTML }}</a> -->
+							<div>
+							{{ range .Site.Params.hero.button }}
 
-					{{ range .Site.Params.hero.button }}
+							{{if .accent}}
 
-					{{if .accent}}
+							<a href="{{ lower .title| safeURL }}" class="button button__accent" style="font-size: 1.4rem;">{{ .title | markdownify}}</a>
 
-					<a href="{{ lower .title| safeURL }}" class="button button__accent">{{ .title | markdownify}}</a>
+							{{else}}
 
-					{{else}}
+							<a href="{{ lower .title| safeURL }}" class="button hero__button">{{ .title | markdownify}}</a>
 
-					<a href="{{ lower .title| safeURL }}" class="button hero__button">{{ .title | markdownify}}</a>
+							{{ end }}
 
-					{{ end }}
-
-					{{ end }}
+							{{ end }}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

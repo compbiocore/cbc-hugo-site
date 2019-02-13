@@ -1,8 +1,7 @@
 <div class="steps landing__section">
-	<div id="{{ .Params.triple.id }}" class="container">
-		<h2>{{ .Params.triple.title | markdownify }}</h2>
-		<p>{{ .Params.triple.text| markdownify }}</p>
-	</div>
+	<!-- <div id="{{ .Params.triple.id }}" class="row">
+		<h1>{{ .Params.triple.title | markdownify }}</h1>
+	</div> -->
 	<div class="container">
 		<div class="steps__inner">
 			{{ range $i, $box :=  .Params.triple.people }}
