@@ -1,9 +1,10 @@
 ---
-baseURL: http://cbc-website-prod.s3-website-us-east-1.amazonaws.com/
+baseURL: http://cbc.brown.edu/
 languageCode: en-us
 title: Computational Biology Core
 theme: cbc
 canonifyURLs: true
+googleAnalytics: UA-115983496-1
 menu:
   main:
   - name: Support
@@ -28,6 +29,16 @@ params:
     text: The COBRE-CBHD Computational Biology Core (CBC) integrates across multiple
       research focused Centers supporting data-intensive research using high-throughput
       DNA/RNA sequencing datasets. The CBC is a service focused Core Facility.
+    button:
+      - title: support
+        accent: true
+      - title: services
+        accent: true
+      - title: resources
+        accent: true
+      - title: about
+        accent: true
+
   triple:
     title: "# Featured News and Events"
     text: News and events from the Computational Biology Core
