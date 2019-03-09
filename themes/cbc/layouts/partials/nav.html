@@ -3,16 +3,18 @@
 	<nav class="nav__mobile"></nav>
 	<div class="container">
 		<div class="navbar__inner">
-			<a href="/" class="navbar__logo">
 				<div class="navbar__logo__item__row">
 					<!-- {{ readFile "static/images/brown-v.svg" | safeHTML }} -->
 					{{ readFile "static/images/cbc-outline.svg" | safeHTML }}
 				</div>
 				<div class="navbar__logo__item__">
-					<small class="nav__title">{{ .Site.Params.top }}</small>
-					<p class="nav__title"><strong>{{ .Site.Title }}</strong></p>
+					<a href="https://www.brown.edu/research/projects/computational-biology-of-human-disease/computational-biology-core">
+						<small class="nav__title">{{ .Site.Params.top }}</small>
+					</a>
+					<a href="/">
+						<p class="nav__title"><strong>{{ .Site.Title }}</strong></p>
+					</a>
 				</div>
-			</a>
 			<nav class="navbar__menu">
 				<!-- prettier-ignore -->
 				<ul>
