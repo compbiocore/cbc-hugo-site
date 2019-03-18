@@ -1,7 +1,7 @@
 // Colors
 $primary: #003C71;
 $secondary: #4641ff;
-$accent: #06d19c;
+$accent: #CCC6B8;
 $primary-dark: darken($primary, 8%);
 $text: #666;
 $text-dark: #111;
@@ -41,8 +41,8 @@ $huge-width: 1400px !default; // Large Desktops
 /* Components */
 
 // Navigation bar
-$navbar-height: 60px; // Height for navigation globally
-$navbar-height-extended: 70px; // Extended height for navigation => Used on landing
+$navbar-height: 100px; // Height for navigation globally
+$navbar-height-extended: 100px; // Extended height for navigation => Used on landing
 
 // Hero
 $hero-color: $background;

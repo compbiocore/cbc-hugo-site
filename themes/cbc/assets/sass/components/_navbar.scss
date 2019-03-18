@@ -1,60 +1,14 @@
 .navbar {
-	position: fixed;
 	z-index: 10;
 	width: 100%;
-	background-color: $primary;
-	transition: 0.7s;
 	padding-top: 1rem;
-
-	&--nofixed {
-		position: relative;
-		z-index: 3;
-	}
-}
-
-.navbar__inner {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: $navbar-height;
-	color: #fff;
-	transition: 0.7s;
-}
-
-// Content
-.navbar__logo {
-	font-size: 1.325rem;
-	font-family: $font !important;
-	color: white !important;
-	transition: 0;
-	color: #fff;
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.navbar__logo__item__col {
-	margin: 1rem;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: flex-start;
-
-	}
-
-.navbar__logo__item__row {
-	margin: 1rem;
-	display: flex;
-	align-items: space-around;
-	flex-direction: row;
-	justify-content: flex-start;
-	text-align: left;
-	height: 4rem;
+	justify-content: space-around !important;
+	font-size: 1.6rem;
+	padding-right: 19%;
+	padding-left: 19%;
 	svg {
 		margin-left: 1rem;
-		height: 3.8rem;
+		height: 4.8rem;
 		fill: white;
 		.st0 {
 			fill: none;
@@ -64,151 +18,46 @@
 	}
 }
 
+.navbar-nav {
+	text-align: center;
+}
+@media (max-width: 576px) {
+	.nav__title {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.nav__title  {
+		font-size: 0.9rem;
+	}
+}
+
+.f-nav{  /* To fix main menu container */
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .nav__title {
-	margin: 0;
-	line-height: 1.6rem;
-	width: 100%;
-	font-family: $font !important;
-	color: white !important;
+	margin-left: 2rem;
+	a, p, small {
+		line-height: 1.6rem;
+		font-family: $font !important;
+		color: white !important;
+	}
 }
 
-.navbar__menu {
-	display: none;
-
-	&--noMob {
-		display: block;
-	}
-
-	@include desktop {
-		display: block;
-	}
-
+.navbar-collapse {
+	justify-content: flex-end;
 	li {
-		margin-left: 4pt;
-		backface-visibility: hidden;
-		display: inline-block;
-		font-family: $font-p !important;
-		a {
-			color: white !important;
-		}
-
-		@include desktop {
-			margin-left: 16pt;
-		}
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-family: $font !important;
 	}
-
 	a {
-		color: #fff;
-		@include desktop {
-			opacity: 0.75;
-
-			&:hover {
-				opacity: 1;
-			}
-
-			&:after {
-				display: block;
-				content: "";
-				border-bottom: solid 1px #fff;
-				transform: scaleX(0);
-				transition: transform 250ms ease-in-out;
-			}
-
-			&:hover:after {
-				transform: scaleX(1);
-			}
-		}
+		color: white !important;
 	}
-}
-
-.navbar__menu-mob {
-	display: block;
-
-	&--noMob {
-		display: none;
-	}
-
-	@include desktop {
-		display: none;
-	}
-}
-
-/*--- Extended and transparent version ---*/
-.navbar--extended {
-	background-color: transparent;
-
-	.navbar__inner {
-		height: $navbar-height;
-		color: $hero-color; // Since this is transparent whatever color is used in the hero, fits here
-	}
-}
-
-/*! responsive-nav.js 1.0.39 by @viljamis */
-
-.nav__mobile ul {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: block;
-	list-style: none;
-	background-color: $background-dark;
-	color: #fff;
-}
-
-.nav__mobile li {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1em 0;
-	display: block;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-	&:last-child {
-		border-bottom: none;
-	}
-}
-
-.js .nav__mobile {
-	clip: rect(0 0 0 0);
-	max-height: 0;
-	position: absolute;
-	display: block;
-	overflow: hidden;
-	zoom: 1;
-}
-
-.nav__mobile.opened {
-	max-height: 9999px;
-}
-
-.nav-toggle {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-@include desktop {
-	.js .nav__mobile {
-		position: relative;
-	}
-	.js .nav__mobile.closed {
-		max-height: none;
-	}
-	.nav-toggle {
-		display: none;
-	}
-}
-
-#toggle svg {
-	height: 1.2em;
-	width: 1.2em;
-	vertical-align: middle;
-}
-
-.search-btn-padding {
-	display: none !important
 }

@@ -88,4 +88,4 @@ opts.navClass+
 "-"+
 this.index+
 ".opened.dropdown-active {max-height:9999px !important}";if(styleElement.styleSheet){styleElement.styleSheet.cssText=innerStyles;}else{styleElement.innerHTML=innerStyles;}
-innerStyles="";}};return new ResponsiveNav(el,options);};if(typeof module!=="undefined"&&module.exports){module.exports=responsiveNav;}else{window.responsiveNav=responsiveNav;}})(document,window,0);
+innerStyles="";}};return new ResponsiveNav(el,options);};if(typeof module!=="undefined"&&module.exports){module.exports=responsiveNav;}else{window.responsiveNav=responsiveNav;}})(document,window,0);$("document").ready(function($){var nav=$('.navbar');$(window).scroll(function(){if($(this).scrollTop()>50){nav.addClass("f-nav");}else{nav.removeClass("f-nav");}});});

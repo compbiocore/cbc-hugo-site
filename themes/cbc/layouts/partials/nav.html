@@ -1,31 +1,28 @@
 <!-- navbar -->
-<div class="navbar navbar--extended">
-	<nav class="nav__mobile"></nav>
-	<div class="container">
-		<div class="navbar__inner">
-				<div class="navbar__logo__item__row">
-					<!-- {{ readFile "static/images/brown-v.svg" | safeHTML }} -->
-					{{ readFile "static/images/cbc-outline.svg" | safeHTML }}
-				</div>
-				<div class="navbar__logo__item__">
-					<a href="https://www.brown.edu/research/projects/computational-biology-of-human-disease/computational-biology-core">
-						<small class="nav__title">{{ .Site.Params.top }}</small>
-					</a>
-					<a href="/">
-						<p class="nav__title"><strong>{{ .Site.Title }}</strong></p>
-					</a>
-				</div>
-			<nav class="navbar__menu">
-				<!-- prettier-ignore -->
-				<ul>
-					{{range .Site.Menus.main}}
-					<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-					{{ end }}
-				</ul>
-			</nav>
-			<!-- prettier-ignore -->
-			<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+
+<!-- end navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex flex-row">
+	<div class="navbar__logo__item__ d-flex flex-row">
+		{{ readFile "static/images/cbc-outline.svg" | safeHTML }}
+		<div class="nav__title">
+			<a href="https://www.brown.edu/research/projects/computational-biology-of-human-disease/computational-biology-core">
+				<small class="">{{ .Site.Params.top }}</small>
+			</a>
+			<a href="/">
+				<p class=""><strong>{{ .Site.Title }}</strong></p>
+			</a>
 		</div>
 	</div>
-</div>
-<!-- end navbar -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav">
+			{{range .Site.Menus.main}}
+			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</div>
+
+</nav>
