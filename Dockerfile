@@ -18,7 +18,8 @@ WORKDIR /site
 
 RUN npm install -g gulp
 RUN npm install
-RUN gulp sass embeds && hugo
+RUN npm run getembeds
+RUN gulp sass && hugo
 
 FROM nginx
 
