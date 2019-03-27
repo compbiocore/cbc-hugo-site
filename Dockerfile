@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:alpine
 
 ENV HUGO_VERSION 0.53
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
@@ -16,10 +16,8 @@ COPY ./ /site
 
 WORKDIR /site
 
-RUN npm install -g gulp
 RUN npm install
-RUN npm run getembeds
-RUN gulp sass && hugo
+RUN npm run build
 
 FROM nginx
 
