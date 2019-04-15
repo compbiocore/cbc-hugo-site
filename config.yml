@@ -1,5 +1,5 @@
 ---
-baseURL: http://cbc.brown.edu/
+baseURL: https://cbc.brown.edu/
 languageCode: en-us
 title: Computational Biology Core
 theme: cbc
