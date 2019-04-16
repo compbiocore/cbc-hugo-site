@@ -8,16 +8,16 @@ googleAnalytics: UA-115983496-1
 menu:
   main:
   - name: Support
-    url: "/support/index.html"
+    url: "/support/"
     weight: 1
   - name: Services
-    url: "/services/index.html"
+    url: "/services/"
     weight: 2
   - name: Resources
-    url: "/resources/index.html"
+    url: "/resources/"
     weight: 3
   - name: About
-    url: "/about/index.html"
+    url: "/about/"
     weight: 4
 params:
   brown_url: https://www.brown.edu
