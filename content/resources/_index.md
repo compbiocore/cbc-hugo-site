@@ -40,6 +40,8 @@ section:
         href: https://compbiocore.github.io
       - title: GitHub
         href: https://www.github.com/compbiocore
+      - title: RefChef View
+        href: https://compbiocore.github.io/refchef-view/
   - title: "# Ingenuity Pathway Analysis"
     id: ipa
     text: "<p>IPA is a software application that enables biologists and bioinformaticians to identify the biological mechanisms, pathways, and functions most relevant to their experimental datasets or genes of interest. It allows researchers to graphically view, analyze, and query data in a comprehensive and seamless manner to understand molecular interactions, biological functions and disease on multiple levels. For more details go to qiagen IPA website and also access their webinars. Access to IPA free for the entire Brown community through September 2019.</p>

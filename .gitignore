@@ -2,6 +2,5 @@
 .env
 data/embed.json
 node_modules
-static/styles/css/*
 public
-resources
+/resources
