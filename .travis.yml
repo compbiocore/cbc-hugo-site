@@ -23,25 +23,23 @@ script:
 before_deploy:
   - npm run buil
 
-# deploy:
-#   - provider: s3
-#     access_key_id: $AWS_ACCESS_KEY_ID
-#     secret_access_key: $AWS_SECRET_ACCESS_KEY
-#     bucket: $AWS_S3_BUCKET_DEV
-#     skip_cleanup: true
-#     local-dir: public
-#     acl: public_read
-#     on:
-#       branch: develop
-#   - provider: s3
-#     access_key_id: $AWS_ACCESS_KEY_ID
-#     secret_access_key: $AWS_SECRET_ACCESS_KEY
-#     bucket: $AWS_S3_BUCKET_PROD
-#     skip_cleanup: true
-#     local-dir: public
-#     acl: public_read
-#     on:
-#       branch: master
+deploy:
+- provider: script
+  script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t cbc_website_dev .
+  - docker tag cbc_website_dev $DOCKER_ORGANIZATION/cbc_website_dev
+  - docker push $DOCKER_ORGANIZATION/cbc_website_dev
+  on:
+    branch: develop
+- provider: script
+  script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t cbc_website_prod .
+  - docker tag cbc_website_prod $DOCKER_ORGANIZATION/cbc_website_prod
+  - docker push $DOCKER_ORGANIZATION/cbc_website_prod
+  on:
+    branch: master
 
 # after_deploy:
 #   - if [[ $TRAVIS_BRANCH = "master" ]]; then travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY_ID -s $AWS_SECRET_ACCESS_KEY -c $AWS_CLOUDFRONT_ID_PROD -i '/*' -b 'master' -p $TRAVIS_PULL_REQUEST; fi
