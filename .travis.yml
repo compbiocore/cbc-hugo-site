@@ -21,7 +21,7 @@ script:
   - npm run build
 
 before_deploy:
-  - npm run buil
+  - npm run build
 
 deploy:
 - provider: script
