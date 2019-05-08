@@ -1,0 +1,64 @@
+#hero-list {
+  background-color: $primary;
+  text-align: center;
+  padding-top: 2rem;
+  h1 {
+    font-size: 5rem;
+  }
+}
+.tag {
+  background-color: gray;
+}
+.blog-content {
+  font-family: Circular-Book, Arial, Helvetica, sans-serif;
+}
+.fs-18 {
+  font-size: 1rem !important;
+}
+article, section {
+  p {
+    line-height: 2rem !important;
+    font-family: Circular-Book, Arial, Helvetica, sans-serif;
+  }
+}
+.small-date {
+  font-size: 1rem;
+}
+.text-primary {
+  font-size: 2rem;
+  color: $primary !important;
+}
+.line-around {
+  line-height: 0.5;
+  text-align: center;
+}
+
+.line-around span {
+  display: inline-block;
+  position: relative;
+}
+
+.line-around span:before, .line-around span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid gray;
+  top: 15px;
+  width: 200px;
+}
+
+.line-around span:before {
+  right: 100%;
+  margin-right: 30px;
+}
+
+.line-around span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.fa-blog {
+  color: gray !important;
+}
+.content-text {
+  font-size: 1.4rem;
+}

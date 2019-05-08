@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+
+<div id="hero-list" class=" bg-light text pb-5 blog-content">
+  <div class="container d-flex flex-column pt-6">
+    {{ range .Params.types }}
+    <div class="line-around p-4">
+      <span>
+        {{if eq `posts` . }}
+        <i class="fas fa-2x fa-blog pr-1 fs-30"></i>
+        {{ else if eq `events` . }}
+        <i class="fas fa-2x fa-calendar-day pr-1 fs-30"></i>
+        {{ else }}
+        <i class="fas fa-2x fa-chalckboard-teacher pr-1 fs-30"></i>
+        {{ end }}
+
+      </span>
+    </div>
+    {{ end }}
+      <h1 class="fs-60 w-100 text-center pt-4"> {{ .Title | markdownify }}</h1>
+      <small class="text-center fs-18 text-gray">Posted by {{ range .Params.authors }}{{ . }}{{ end }} on <i>{{ .PublishDate.Format "January 2, 2006" }}</i></small>
+  </div>
+</div>
+
+<section id="section-1" class="bg-light blog-content">
+
+
+
+  <div class="container-fluid py-10 d-flex justify-content-center">
+      <div class="col-lg-7 col-md-11 col-sm-12 content-text">
+
+      {{ .Content  }}
+
+    </div>
+</div>
+
+
+</section>
+
+{{ end }}

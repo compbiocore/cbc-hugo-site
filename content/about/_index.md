@@ -16,7 +16,7 @@ front:
   src: "../images/about.png"
 triple:
   title: "# **People**"
-  text: 
+  text:
   people:
   - name: David Rand, PhD
     title: Co-director
@@ -27,29 +27,29 @@ triple:
     affiliation: Department of Biostatistics
     src: "../images/wu.jpg"
   - name: Paul Stey, PhD
-    title: Advisor, Director of Data Science
-    affiliation: Data Science Practice, CIS
-    src: "../images/paul.jpg"
+    title: Advisor, Director of Data Science and Scientific Computing
+    affiliation: Center for Computation & Visualization
+    src: "../images/stey_main.jpg"
   - name: Ashok Ragavendran, PhD
     title: Lead Data Scientist, CBC Manager
-    affiliation: Data Science Practice, CIS
-    src: "../images/ashok.jpg"
+    affiliation: Center for Computation & Visualization
+    src: "../images/ashok_main.jpg"
   - name: August Guang, PhD
     title: Genomics Data Scientist
-    affiliation: Data Science Practice, CIS
-    src: "../images/august.png"
+    affiliation: Center for Computation & Visualization
+    src: "../images/august_main.jpg"
   - name: Andrew Leith, PhD
     title: Genomics Data Scientist
-    affiliation: Data Science Practice, CIS
-    src: "../images/andrew.jpg"
+    affiliation: Center for Computation & Visualization
+    src: "../images/andrew_main.jpg"
   - name: Fernando Gelin, PhD
     title: Research Software Engineer
-    affiliation: Data Science Practice, CIS
-    src: "../images/fernando.jpg"
+    affiliation: Center for Computation & Visualization
+    src: "../images/fernando_main.jpg"
   - name: Joselynn Wallace, PhD
     title: Genomics Data Scientist
-    affiliation: Data Science Practice, CIS
-    src: "../images/joselynn.jpg"
+    affiliation: Center for Computation & Visualization
+    src: "../images/joselynn_main.jpg"
   - name: No new positions open at the moment.
     title: Check back soon.
 

@@ -5,20 +5,25 @@ title: Computational Biology Core
 theme: cbc
 canonifyURLs: true
 googleAnalytics: UA-115983496-1
+pygmentsCodefences: true
+
 menu:
   main:
   - name: Support
     url: "/support/"
-    weight: 1
+    weight: 2
   - name: Services
     url: "/services/"
-    weight: 2
+    weight: 3
   - name: Resources
     url: "/resources/"
-    weight: 3
+    weight: 4
   - name: About
     url: "/about/"
-    weight: 4
+    weight: 1
+  - name: Blog
+    url: "/blog/"
+    weight: 5
 params:
   brown_url: https://www.brown.edu
   top: Center for Computational Biology of Human Disease
@@ -35,6 +40,8 @@ params:
     - title: services
       accent: true
     - title: resources
+      accent: true
+    - title: blog
       accent: true
     - title: about
       accent: true
@@ -79,3 +86,8 @@ params:
     - Research reported on this website is supported by an Institutional Development
       Award (IDeA) from the National Institute of General Medical Sciences of the
       National Institutes of Health under grant number P20GM109035.
+# Taxonomies
+taxonomies:
+  tag: "tags"
+  type: "types"
+  category: "category"

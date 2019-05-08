@@ -8,12 +8,13 @@ front:
   description: Resources provided by the Computational Biology Core. Includes database subscriptions and licenses. Additionally, we provide various open source software, workshops, and tutorials in Bioinformatics and Data Science.
   src: ../images/sohiini-map.jpg
   button:
+    - title: Outreach
+      href: "#outreach"
     - title: CBC Tools
       href: "#cbc-projects"
     - title: Ingenuity Pathway Analysis
       href: "#ipa"
-    - title: Outreach
-      href: "#outreach"
+
 
 triple:
   title: "# Outreach"
@@ -23,12 +24,15 @@ triple:
     - title: Workshops
       text:
       src: ../images/undraw_designer.svg
+      href: "https://compbiocore.github.io/#workshops"
     - title: Tutorials
       text:
+      href: "https://compbiocore.github.io/#tutorials"
       src: ../images/undraw_elements.svg
     - title: Analysis Support
       text:
       src: ../images/undraw_hello_aeia.svg
+      href: "https://cbc.brown.edu/services/"
 
 section:
   - title: "# Computational Biology Core Tools"
