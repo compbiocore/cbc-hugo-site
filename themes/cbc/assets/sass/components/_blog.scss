@@ -56,9 +56,16 @@ article, section {
   left: 100%;
   margin-left: 15px;
 }
-.fa-blog {
+.fas {
   color: gray !important;
 }
 .content-text {
   font-size: 1.4rem;
+}
+.top-right {
+  text-align: right;
+  font-size: 2rem;
+}
+.tag {
+  line-height: 2rem;
 }
