@@ -9,8 +9,8 @@
 	<div class="container">
 		<div class="expanded__inner">
 			<div class="expanded__media">
-				{{ if .calendar }}
-				<iframe class="iframe-calendar" src="https://calendar.google.com/calendar/embed?src=brown.edu_e9ihnmpmjbldkcpvmralir6578%40group.calendar.google.com&amp;ctz=America/New_York" style="border: 20" frameborder="0" scrolling="no"></iframe>
+				{{ if .iframe }}
+				<iframe class="iframe-calendar" src="{{ .iframe }}" style="border: 20" frameborder="0" scrolling="no"></iframe>
 				{{ else }}
 				<img src="{{ .src }}" class="expanded__image" />
 				{{ end }}
