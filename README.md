@@ -12,8 +12,6 @@ This repository contains the Hugo project for Brown's Computational Biology Core
 - [Hugo](https://gohugo.io/)
 - [Node](https://nodejs.org/en/)
 - [NPM](https://nodejs.org/en/)
-- [Gulp](https://gulpjs.com)
-
 
 ## Install Dependencies
 
@@ -42,9 +40,32 @@ To see the site, navigate to `localhost:1313`.
 Build site into `public/`:
 
 ```bash
-gulp sass embeds && hugo
+npm run build
 ```
 
-## Deployment
 
-A build will be triggered and deployed into a S3 bucket whenever changes are pushed to master **and** the Travis build passes. Currently, the website can be accessed at [http://cbc-website-dev.s3-website-us-east-1.amazonaws.com](http://cbc-website-dev.s3-website-us-east-1.amazonaws.com).
+## Adding posts to Blog section
+
+Posts are divided in three sub categories:
+- **Events**: we include events that have a long description. Ex. [DSCoV workshops](https://datasci.brown.edu/ccv-dev/2019/01/data-science-computing-and-visualization-workshops/). Other events, go directly on CCV's calendar (more on this later).
+- **Posts**: Any blog post you want.
+- **Projects**: Student projects, or projects you want to showcase that doesn't have a standalone website.
+
+`.md` files in the Blog post section have the following front-matter:
+
+```yaml
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: false
+types: ["events", "posts", "projects"] # keep only one of the categories
+tags: [""] # add keywords here, be consistent with other posts.
+authors: [""]
+---
+```
+
+To create a new file:
+```shell
+hugo new content/english/news/posts/post.md
+```
+Hugo will create a new `.md` file with the front-matter. If you don't use Hugo's cli, make sure to add the front-matter to your file.
