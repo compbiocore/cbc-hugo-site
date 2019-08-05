@@ -7,10 +7,10 @@
     "cryptiles": "^4.1.2",
     "dotenv": "^6.0.0",
     "hoek": "^5.0.3",
-    "js-yaml": "^3.12.0",
-    "lodash": "^4.17.5",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.11",
     "minimatch": "^3.0.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "postcss-cli": "^6.1.2",
     "request": "^2.87.0"
   },
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "node index.js && hugo serve --disableFastRender",
-    "build": "hugo",
+    "build": "node index.js && hugo",
     "getembeds": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

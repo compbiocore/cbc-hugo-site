@@ -1,0 +1,14 @@
+<footer class="cbc-footer">
+  <div class="cbc-footer-inner">
+    <div>
+      <h1>{{ .Site.Params.hero.title }}</h1>
+      <p>{{ .Site.Params.top}}</p>
+      <a href="mailto:{{ .Site.Params.email }}"><span class="fas fa-envelope"></span>&nbsp;&nbsp;<p>{{ .Site.Params.email }}</p></a>
+    </div>
+    <div>
+      {{ range .Site.Params.footer.secondcolumn }}
+      {{ . | markdownify }}
+      {{ end }}
+    </div>
+  </div>
+</footer>

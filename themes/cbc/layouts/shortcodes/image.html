@@ -1,0 +1,12 @@
+{{ $align := .Get "align" }}
+{{ $caption := .Get "caption" }}
+{{ with .Page.Resources.Match (.Get "name") }}
+{{ range .}}
+  <figure class="justify-content-{{$align}} d-flex">
+
+    <img src="{{.RelPermalink}}">
+    <figcaption>{{$caption}}</figcaption>
+
+  </figure>
+{{ end }}
+{{ end }}
