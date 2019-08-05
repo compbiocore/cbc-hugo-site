@@ -1,6 +1,6 @@
 ---
 title: Building a consensus sequence with vcf files
-date: {{ .Date }}
+date: 2019-08-05T11:02:52-05:00
 draft: false
 types: ["posts"]
 tags: ["vcfs","gatk","bcftools","phylogenies"]
@@ -20,13 +20,13 @@ Meanwhile, VCF4.3 explicitly uses `<*>` to indicate the unspecified alternate al
 So, what should you do?
 
 If your VCF files are from GATK, then recent versions of GATK4 now have [`FastaAlternateReferenceMaker`](https://software.broadinstitute.org/gatk/documentation/tooldocs/3.8-0/org_broadinstitute_gatk_tools_walkers_fasta_FastaAlternateReferenceMaker.php), which is simple to run on gVCF/VCF files from GATK4. This is the easiest solution. On Oscar using CBC's conda environments, this is simply
-```
+```shell
 gatk4 FastaAlternateReferenceMaker -R $REFERENCE -O $CONSENSUS_FASTA -V $VCF
 ```
 
 Another possibility is to run `sed s/<NON_REF>// $INPUT_VCF` then run bcftools. However, you must be careful with this, as if you run it on genomic VCFs then converters like `bcftools convert` will not work, but neither will they give an error. Instead you will just get a file with only the positions present in the genomic VCF. If you do this, the correct order to run commands instead should be:
 
-```
+```shell
 bcftools convert --gvcf2vcf --fasta-ref $REFERENCE -o ${VCF} ${GVCF}
 sed 's/<NON_REF>//' ${VCF} > ${SED.VCF}
 bcftools view -Oz -o ${SED.VCF.GZ} ${SED.VCF}
