@@ -37,5 +37,3 @@ bcftools consensus -f $REFERENCE -o $CONSENSUS_FASTA ${SED.VCF.GZ}
 So a bit more involved. From running both methods, I found that they produce the same consensus sequences, but base calls made as `N` by `FastaAlternateReferenceMaker` get called as one of the other ambiguous [IUPAC](https://www.bioinformatics.org/sms/iupac.html) codes by `bcftools`. I'm not sure of why that is, but my guess would be it has to do with removing `<NON_REF>` from the VCFs. Ultimately I don't think it affects multiple sequence alignment much.
 
 If your VCF files are from bcftools/samtools mpileup, then their consensus method should work just fine, and they detail how to get a consensus [in their manual](https://samtools.github.io/bcftools/howtos/consensus-sequence.html).
-
-{{% sign "August Guang" %}}
