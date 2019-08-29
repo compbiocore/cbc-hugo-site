@@ -22,7 +22,7 @@ menu:
     url: "/about/"
     weight: 1
   - name: Blog
-    url: "/blog/"
+    url: "https://medium.com/brown-compbiocore"
     weight: 5
 params:
   brown_url: https://www.brown.edu
@@ -49,6 +49,13 @@ params:
     title: "# Featured News and Events"
     text: News and events from the Computational Biology Core
     box:
+    - title: RI Microbiome Symposium
+      text: Please join us at the Rhode Island Microbiome Symposium at Avedisian Hall
+        (College of Pharmacy) at the University of Rhode Island on Jan 16–17.
+        The RI Microbiome Symposium seeks to bring together active and potential
+        microbiome researchers from Rhode Island and the Northeast to network
+        and present their research in the field of microbiomics. [Register here.](https://web.uri.edu/riinbre/microbiome-symposium-2020/) 
+      src: images/microbiome_symposium.png
     - title: IPA is now available
       text: The CBC has subscribed to a site-wide license to the Ingenuity Pathway
         Analysis Software tool, accessible to all researchers with a Brown affiliation.
@@ -57,12 +64,6 @@ params:
       text: CBC launches new site with open source software, workshops, tutorials,
         and documentation. You can visit the new site [here](https://compbiocore.github.io).
       src: images/cbc-tools-site.png
-    - title: RNA-seq QC Workshop
-      text: The Computational Biology Core is presenting a workshop on RNA-seq QC
-        and Exploratory Analysis using Bioconductor on Friday, November 30, 2018,
-        9 a.m. to noon in the CIT SWIG Boardroom. For more details and to register
-        please click the title of this slide.
-      src: images/undraw_design.svg
   embed:
   - url: http://www.pnas.org/content/107/16/7503.long
   - url: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1319-7
