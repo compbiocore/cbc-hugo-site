@@ -47,7 +47,7 @@ section:
   - title: RefChef View
     button:
       - title: Visit the Site
-        href: "httpe://compbiocore.github.io/refchef-view"
+        href: https://compbiocore.github.io/refchef-view
     id: refchef
     text: "List of Genome References available on URSA Stronghold and CCV's Oscar."
     src: "../images/refchef-view.png"
